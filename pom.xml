@@ -16,6 +16,13 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Ada-deva Apache Maven Package</name>
+			<url>https://maven.pkg.github.com/Ada-deva/microservice-template/</url>
+		</repository>
+	</distributionManagement>
 	<profiles>
 		<profile>
 			<id>sonar</id>
@@ -46,13 +53,6 @@
 					</plugin>
 				</plugins>
 			</build>
-			<distributionManagement>
-				<repository>
-					<id>github</id>
-					<name>NoticeBoard Simple CRUD application</name>
-					<url>https://maven.pkg.github.com/Ada-deva/microservice-template/</url>
-				</repository>
-			</distributionManagement>
 		</profile>
 	</profiles>
 	<dependencies>
